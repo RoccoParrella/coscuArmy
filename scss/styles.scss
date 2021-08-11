@@ -1,4 +1,4 @@
-$theme-color : #2d3436 ;
+$theme-color : #23272b;
 $background-color : #dfe6e9 ;
 $text-color: white ;
 $text-color-inverse : black ;
@@ -10,6 +10,11 @@ $redes:(
     facebook: #1977f3
 );
 
+ul {
+    padding-left: initial
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +23,6 @@ $redes:(
 
 html{
     height: 100%;
-    font-size: 62.5%;
 }
 
 body {
@@ -34,6 +38,9 @@ header{
     left: 0;
     top: 0;
     width: 100%;
+    opacity: 0.99;
+    position: sticky;
+    z-index: 2;
 }
 
 .cover {
@@ -83,7 +90,7 @@ footer {
             "fondo" auto
             "main" auto
             "sidebar" auto
-            "footer" 200px /
+            "footer" auto /
             1fr  ;
         }
     /*---------------------------------*/
@@ -93,7 +100,7 @@ footer {
         grid-template: 
         "header" auto   
         "shop" auto
-        "footer" 200px /
+        "footer" 220px /
         1fr  ;
     }
 
@@ -126,14 +133,14 @@ footer {
     }
     
     .product__title {
+        font-size: 1.8rem;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
-        font-size: 2rem;
         color: black;
     }
-    
-    
+
+
     /*----------------------------------*/
     /*-----------GRID ESPORTS-----------*/
     .grid-container-esports {
@@ -141,18 +148,18 @@ footer {
         grid-template: 
         "header" auto   
         "esports" auto
-        "footer" auto /
+        "footer" 220px /
         1fr  ;
     }
     
     .esports {
         margin: 10px;
     }
-    
+
     .box-img-section {   
         width: 100%; 
     }
-    
+
     .box-img {
         margin-top: 10px;
         background-color: white;
@@ -160,12 +167,12 @@ footer {
         padding: 20px;
         width: 200px;
     }
-    
+
     .img-players {
         width: 150px;
         border-radius: 50%;
     }
-    
+
     .players {
         display: flex;
         flex-flow: row nowrap;
@@ -176,42 +183,32 @@ footer {
         background-color: white;
         border-radius: 20px;
     }
-    
+
     .info-players {
         text-align: start;
         font-family: 'Roboto';
-        font-size: 2rem;
+        font-size: 0.1rem;
         text-transform: uppercase;
     }
     
     .role-players {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: rgb(59, 59, 59);
     }
-    
+
     .country-players {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 500;
     }
-    
+
     /*----------------------------------*/
-    /*-----------GRID SERVERS-----------*/
-    .grid-container-servers {
-        display: grid;
-        grid-template: 
-        "header" 200px
-        "servers" auto
-        "footer" 200px /
-        1fr  ;
-    }
-    /*---------------------------------*/
     /*-----------GRID AWARDS-----------*/
     .grid-container-awards {
         display: grid;
         grid-template: 
-        "header" 270px 
+        "header" 95px 
         "awards" auto
-        "footer" 130px /
+        "footer" 220px /
         1fr  ;
     }
     
@@ -219,21 +216,21 @@ footer {
         width: 100%;
         height: 100%;
     }
-    
+
     .awards{
         width: 100%;
         height: 100%;
     }
-    
+
     /*-----------------------------------*/
     /*-----------GRID CONTACTO-----------*/
     .grid-container-contacto {
         display: grid;
         grid-row-gap: 20px;
         grid-template: 
-        "header" auto
+        "header" 95px
         "contacto" auto
-        "footer" 130px /
+        "footer" 220px /
         1fr  ;
     }
     
@@ -246,16 +243,21 @@ footer {
         margin: auto;
         border-radius: 4px;
     }
+
+    .contacto {
+        margin: auto;
+    }
     
     .form-title{
         font-family: 'Roboto';
-        font-size: 24px;
+        font-size: 20px;
         color: white;
         margin-bottom: 20px;
     }
     
     .form-place {
         border-radius: 4px;
+        font-size: 13px;
         border: 1px solid rgb(170, 170, 170);
         background-color: $theme-color;
         color: $text-color;
@@ -267,11 +269,12 @@ footer {
     
     .form-text-area {
         border-radius: 4px;
+        font-size: 13px;
         border: 1px solid rgb(170, 170, 170);
         background-color: $theme-color;
         color: $text-color;
         font-family: 'Roboto';
-        padding: 10px;
+        padding: 4px;
         height: 100px;
         width: 100%;
         resize: none;
@@ -284,7 +287,7 @@ footer {
         font-size: 16px;
         text-align: center;
         display: block;
-        height: 34px;
+        height: auto;
     }
     
     .terminos a {
@@ -314,79 +317,6 @@ footer {
     }
     
     /*---------------------------------*/
-    
-    .header__logo {
-        width: 100px;
-        height: 100px ;
-        filter: invert(100%);
-        border-radius: 50%;
-    }
-    
-    .nav  {
-        z-index: 2;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: start;
-        align-content: center;
-        margin: 0 auto;
-        height: 100%;
-        padding-bottom: 10px;
-    }
-    
-    .nav__menu {
-        display: flex;
-        flex-flow: column wrap;
-        align-content: center;
-        justify-content: center;
-        z-index: 2;
-    }
-    
-    .nav__menu li {
-        align-self: center;
-        display: flex;
-        align-items: center;
-        position: relative;
-        padding: 6px 0;
-    }
-    
-    .nav__menu li a {
-        z-index: 2;
-        color: white;
-        font-size: 1.5rem;
-        font-family: 'Montserrat', sans-serif;
-        text-transform: uppercase;
-        padding: 0em 1em 0em 1em;
-    }
-    
-    .nav__menu a:link {
-        text-decoration: none;
-    }
-    
-    .nav__menu li a:hover {
-        transition: .5s;
-        color: gray;
-    }
-    
-    .nav__menu ul {
-        position: absolute;
-        display: none;
-    }
-    
-    .nav__menu ul li {
-        display: flex;
-    }
-    
-    .nav__menu li:hover ul {
-        z-index: 3;
-        display: flex ;
-        flex-flow: column nowrap;
-        margin: 170% 0 0 -50%;
-        background-color: $theme-color;
-        width: 15em;
-        text-align: center;
-        list-style: none;
-        box-shadow: $box-shadow-box;
-    }
     
         .cover{
             width: 100%;
@@ -428,17 +358,18 @@ footer {
         }
     
         .article__title {
-            font-size: 2.5rem;
+            font-size: 1.6rem;
             font-family: 'Oswald', sans-serif;
             text-transform: uppercase;
         }
     
         .article__text {
             padding: 5px 0;
-            font-size: 1.5rem;
+            font-size: 1rem;
             font-family: 'Roboto', sans-serif;
         }
-    
+
+
         .aside {
             z-index: 1;
         }
@@ -482,7 +413,6 @@ footer {
     
         .top-margin {
             margin-top: 10px;
-    
         }
     
         .footer {
@@ -490,19 +420,19 @@ footer {
             flex-direction: column ;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 40px;
         }
     
         .footer__text {
             font-family: 'Montserrat', sans-serif;
-            font-size: 1.3rem;
-            text-transform: uppercase;
+            font-size: 1rem;
             color: $text-color;
+            margin-bottom: -1rem;
         }
     
         .footer__bar {
             background-color: $text-color;
-            width: 100px;
+            width: 150px;
             height: 1px;
             margin: 20px 0;
         }
@@ -536,10 +466,10 @@ footer {
         /*------------GRID INDEX------------*/
             .grid-container-index {
                 grid-template: 
-                "header header header" auto
+                "header header header" 95px
                 "fondo fondo fondo" auto
                 "main main sidebar "  auto
-                "footer footer footer" 100px /
+                "footer footer footer" auto /
                 1fr 1fr 1fr;
                 column-gap: 20px;
             }
@@ -548,9 +478,9 @@ footer {
         .grid-container-shop {
             display: grid;
             grid-template: 
-            "header header header" 120px  
+            "header header header" 95px
             "shop shop shop" auto
-            "footer footer footer" 100px /
+            "footer footer footer" 220px /
             1fr  ;
         }
         
@@ -582,7 +512,6 @@ footer {
             text-align: center;
             font-family: 'Montserrat', sans-serif;
             text-transform: uppercase;
-            font-size: 2rem;
             color: black;
         }
         
@@ -597,17 +526,17 @@ footer {
         
         .product__title:hover {
             letter-spacing: 2rem;
-            padding-left: 2rem;
-            transition: 0.5s;
+            padding-left: 0.7rem;
+            transition: all 0.5s;
         }
         /*----------------------------------*/
         /*-----------GRID ESPORTS-----------*/
         .grid-container-esports {
             display: grid;
             grid-template: 
-            "header header header" 120px  
+            "header header header" 95px  
             "esports esports esports" auto
-            "footer footer footer" 100px /
+            "footer footer footer" 220px /
             1fr  ;
         }
         
@@ -651,23 +580,13 @@ footer {
         }
         
         /*----------------------------------*/
-        /*-----------GRID SERVERS-----------*/
-        .grid-container-servers {
-            display: grid;
-            grid-template: 
-            "header header header" 100px
-            "servers servers servers" auto
-            "footer footer footer" 100px /
-            1fr  ;
-        }
-        /*---------------------------------*/
         /*-----------GRID AWARDS-----------*/
         .grid-container-awards {
             display: grid;
             grid-template: 
-            "header header header" 120px  
+            "header header header" 95px
             "awards awards awards" auto
-            "footer footer footer" 100px /
+            "footer footer footer" 200px /
             1fr 1fr 1fr  ;
         }
         
@@ -677,9 +596,9 @@ footer {
             display: grid;
             grid-row-gap: 20px;
             grid-template: 
-            "header header header" 120px   
+            "header header header" 95px  
             "contacto contacto contacto" auto
-            "footer footer footer" 100px /
+            "footer footer footer" 220px /
             1fr  ;
         }
         
@@ -689,66 +608,20 @@ footer {
         }
         /*---------------------------------*/
         
-        .header {
-            opacity: 0.99;
-            position: sticky;
-            z-index: 2;
-        }
-        
-        .header__logo {
-            width: 70px;
-            height: 70px;
-        }
-        
-        .nav  {
-            flex-flow: column nowrap;
-            justify-content: space-around;
-            max-width: auto ;
-            padding-bottom: 0px;
-        }
-        
-        .nav__menu {
-            flex-flow: row nowrap;
-            justify-content: space-around;
-        }
-        
-        .nav__menu li:hover ul {
-            flex-flow: column nowrap;
-            margin: 227% 0 0 -60%;
-            width: 18em;
-        }
-        
-        .nav__menu li:hover ul li a {
-            padding: 0.5em 1em 0.5em 1em;
-        }
-        
             .aside__title {
-                font-size: 3.6rem;
+                font-size: 2em;
             }
         
             .aside-box a {
-                font-size: 2rem;
+                font-size: 1rem;
             }
         
             .top-margin {
                 margin-top: 20px;
             }
         
-            .footer {
-                flex-direction: row;
-            }
-        
-            .footer__text {
-                font-size: 1.5rem;
-            }
-        
-            .footer__bar {
-                width: 1px;
-                height: 70px;
-                margin: 0 2em;
-            }
             .font-small {
-                font-size: 1.5rem;
+                font-size: 1rem;
             }
     }
     @media only screen and (min-width: 1200px) {
@@ -756,10 +629,10 @@ footer {
         .grid-container-index {
             grid-column-gap: 20px;
             grid-template: 
-            "header header header header" 70px
+            "header header header header" 95px
             "fondo fondo fondo fondo" auto
             ". main sidebar ."  auto
-            "footer footer footer footer" 150px /
+            "footer footer footer footer" 100px /
             auto 700px 300px auto;
             }
         /*----------------------------------*/
@@ -767,7 +640,7 @@ footer {
         .grid-container-shop {
             display: grid;
             grid-template: 
-            "header header header header" 70px
+            "header header header header" 95px
             "shop shop shop shop" auto
             "footer footer footer footer" 100px /
             1fr  ;
@@ -777,7 +650,7 @@ footer {
         .grid-container-esports {
             display: grid;  
             grid-template: 
-            "header header header header" 70px
+            "header header header header" 95px
             "esports esports esports esports" auto
             "footer footer footer footer" 100px /
             1fr  ;
@@ -787,7 +660,7 @@ footer {
         .grid-container-servers {
             display: grid;
             grid-template: 
-            "header header header header" 70px
+            "header header header header" 95px
             "servers servers servers servers" auto
             "footer footer footer footer" 100px /
             1fr  ;
@@ -797,7 +670,7 @@ footer {
         .grid-container-awards {
             display: grid;
             grid-template: 
-            "header header header header" 70px
+            "header header header header" 95px
             "awards awards awards awards" auto
             "footer footer footer footer" 100px /
             1fr 1fr 1fr  ;
@@ -807,28 +680,13 @@ footer {
         .grid-container-contacto {
             display: grid;
             grid-template: 
-            "header header header header" 70px 
+            "header header header header" 95px 
             "contacto contacto contacto contacto" auto
             "footer footer footer footer" 100px /
             1fr  ;
         }
         /*---------------------------------*/
-        
-        .nav  {
-            flex-flow: row nowrap;
-            margin: 0 auto;
-        }
-        
-        .nav__menu li:hover ul {
-                margin-top: 290%;
-                width: 18em;
-                text-align: start;
-            }
-        
-            .nav__menu li:hover ul li a {
-                padding: 1em 1em 1em 0.8em;
-            }
-        
+
             .cover__img {
                 filter: blur(4px);
                 transition: 5s;
@@ -836,11 +694,11 @@ footer {
         
             #animation__coscu{
                 font-family: 'Montserrat', sans-serif;
-                font-size: 10rem;
-                letter-spacing: 4rem;
+                font-size: 7rem;
+                letter-spacing: 2rem;
                 animation-name: efecto;
                 animation-timing-function: ease-in;
-                animation-duration: 5s;
+                animation-duration: 2s;
             }
         
             @keyframes efecto {
@@ -851,13 +709,13 @@ footer {
                     letter-spacing: 1rem;
                 }
                 100%{
-                    letter-spacing: 4rem;
+                    letter-spacing: 2rem;
                 }
             }
         
             .cover__text {
                 font-family: 'Open Sans', sans-serif;
-                font-size: 3rem;
+                font-size: 1.8rem;
                 color: $text-color;
                 text-transform: uppercase;
             }
@@ -876,6 +734,19 @@ footer {
                 margin: 0 10em;
             }
         
+            .footer {
+                flex-direction: row;
+            }
+        
+            .footer__text {
+                font-size: 1.2rem;
+            }
+        
+            .footer__bar {
+                width: 1px;
+                height: 50px;
+                margin: 0 2em;
+            }
             .font-small {
                 font-size: 2rem;
             }

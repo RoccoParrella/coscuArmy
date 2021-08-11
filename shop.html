@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,26 +19,54 @@
     <meta name="keywords" content="coscu army, shop, tienda, remeras, gorras, stickers, ropa">
     <meta name="description" content="En nuestra tienda puedes encontrar prendas y articulos de la mejor calidad de la Coscu Army.">
     <title>Coscu Army | Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="shortcut icon" href="./images/logotitle.png">
     <link rel="stylesheet" href="css/css.css">
 </head>
 <body class="grid-container-shop">
     <header class="header"> 
-        <nav class="nav"> 
-            <a href=""><img class="header__logo" src="./images/coscuarmyy.svg" alt="Logo de la Coscu Army" ></a>
-            <ul class="nav__menu">
-                <li><a href="index.html">inicio</a></li>
-                <li><a href="shop.html">shop</a>
-                    <ul>
-                        <li><a href="shop.html">remeras</a></li>
-                        <li><a href="shop.html">gorras</a></li>
-                        <li><a href="shop.html">stickers</a></li>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/coscuarmy.png" alt="" width="70" height="70">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="shop.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Shop
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="shop.html">Remeras</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="shop.html">Buzos</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="shop.html">Gorras</a></li>
                     </ul>
-                <li><a href="esports.html">esports</a></li>
-                <li><a href="awards.html">awards</a></li> 
-                <li><a href="contacto.html">contacto</a></li> 
-            </ul>
-        </nav>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="esports.html">Esports</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="awards.html">Awards</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     
     <section class="shop">
@@ -72,7 +100,7 @@
     
     <footer class="footer top-margin"> 
         <div class="footer__text">
-            <p>coscu army | derechos reservados 2020-2021</p>
+            <p>Coscu Army | Derechos Reservados 2020-2021</p>
         </div>
         <div class="footer__bar"></div>
         <div class="buttons"> 
@@ -90,5 +118,7 @@
             </a>
         </div>
     </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </body>
 </html>
