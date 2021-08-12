@@ -285,7 +285,7 @@ footer {
     align-items: center;
     padding: 40px; }
   .footer__text {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     color: white;
     margin-bottom: -1rem; }
@@ -303,15 +303,14 @@ footer {
     border-radius: 50%;
     margin: 0 6px; }
   .instagram:hover {
-    background-color: #da2d7c; }
+    background: linear-gradient(#9400d8, #da2d7c, #ff8901); }
   .twitter:hover {
-    background-color: #1da1f3; }
+    background: linear-gradient(#1da1f3, #1da1f3); }
   .youtube:hover {
-    background-color: #fe0000; }
+    background: linear-gradient(#fe0000, #fe0000); }
   .facebook:hover {
-    background-color: #1977f3; }
+    background: linear-gradient(#1977f3, #1977f3); }
   .buttons__social__media {
-    transition: 0.3s;
     background-color: #dfe6e9; } }
 
 @media only screen and (min-width: 600px) {
@@ -480,7 +479,7 @@ footer {
   .footer {
     flex-direction: row; }
   .footer__text {
-    font-size: 1.2rem; }
+    font-size: 1rem; }
   .footer__bar {
     width: 1px;
     height: 50px;

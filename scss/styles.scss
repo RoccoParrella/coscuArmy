@@ -4,10 +4,10 @@ $text-color: white ;
 $text-color-inverse : black ;
 $box-shadow-box: -1px 1px 7px 0px rgba(0, 0, 0, 0.75) ;
 $redes:(
-    instagram: #da2d7c,
-    twitter: #1da1f3,
-    youtube: #fe0000,
-    facebook: #1977f3
+    instagram: (#9400d8, #da2d7c, #ff8901),
+    twitter: (#1da1f3, #1da1f3),
+    youtube: (#fe0000,#fe0000),
+    facebook: (#1977f3, #1977f3)
 );
 
 ul {
@@ -420,7 +420,7 @@ footer {
         }
     
         .footer__text {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Roboto', sans-serif;
             font-size: 1rem;
             color: $text-color;
             margin-bottom: -1rem;
@@ -443,16 +443,15 @@ footer {
             text-decoration: none;
             border-radius: 50%;
             margin: 0 6px;
+            
         }
-
         @each $social, $color in $redes{
             .#{$social}:hover {
-                background-color: $color;
+                background: linear-gradient($color) ;
+                
             }
         }
-
         .buttons__social__media {
-            transition: 0.3s;
             background-color: $background-color;
         }
     
@@ -735,7 +734,7 @@ footer {
         }
     
         .footer__text {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     
         .footer__bar {
