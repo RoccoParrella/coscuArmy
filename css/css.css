@@ -1,3 +1,6 @@
+.text-light:hover {
+  background-color: #4e4e4e; }
+
 ul {
   padding-left: initial; }
 
@@ -95,6 +98,8 @@ footer {
   .grid-container-esports {
     display: grid;
     grid-template: "header" auto    "esports" auto "footer" 220px / 1fr; }
+  .csgo {
+    margin: auto; }
   .esports {
     margin: 10px; }
   .box-img-section {
@@ -119,12 +124,9 @@ footer {
     border-radius: 20px; }
   .info-players {
     text-align: start;
-    font-family: 'Roboto';
-    font-size: 0.1rem;
     text-transform: uppercase; }
   .role-players {
-    font-size: 1.2rem;
-    color: #3b3b3b; }
+    font-size: 1.2rem; }
   .country-players {
     font-size: 1.2rem;
     font-weight: 500; }
@@ -235,11 +237,9 @@ footer {
     text-decoration: none;
     color: black; }
   .article__title {
-    font-size: 1.6rem;
-    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
     text-transform: uppercase; }
   .article__text {
-    padding: 5px 0;
     font-size: 1rem;
     margin-bottom: -0.5rem;
     font-family: 'Roboto', sans-serif; }
@@ -277,6 +277,7 @@ footer {
   .top-margin {
     margin-top: 10px; }
   .footer {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -357,8 +358,10 @@ footer {
     width: 100%;
     height: 100%; }
   .csgo {
-    width: 100%;
-    margin: auto; }
+    background-color: white;
+    width: auto;
+    margin: 20px;
+    border-radius: 5px; }
   .flex-players {
     display: flex;
     flex-flow: row wrap;
@@ -370,7 +373,11 @@ footer {
     height: 300px;
     width: 200px;
     margin: 15px;
-    border-radius: 20px; }
+    border-radius: 20px;
+    transition: .3s; }
+  .players:hover {
+    background-color: #23272b;
+    color: white; }
   .info-players {
     text-align: center; }
   .role-players {
@@ -414,6 +421,8 @@ footer {
   .grid-container-esports {
     display: grid;
     grid-template: "header header header header" 95px "esports esports esports esports" auto "footer footer footer footer" 100px / 1fr; }
+  .csgo {
+    margin: auto; }
   /*----------------------------------*/
   /*-----------GRID SERVERS-----------*/
   .grid-container-servers {

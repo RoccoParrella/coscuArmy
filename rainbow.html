@@ -16,14 +16,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <meta name="keywords" content="coscu army, contacto, email, ayuda, preguntas frecuentes">
-    <meta name="description" content="Si tienes alguna duda, pregunta o tienes que reportar un problema, no dudes en rellenar el formulario y contarnos tu problema.">
-    <title>Coscu Army | Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta name="keywords" content="coscu army, eSports, csgo, counter strike, rainbow six, players, rooster">
+    <meta name="description" content="Coscu Army actualmente cuenta con dos equipos de eSports, uno de 'Counter Strike' y otro de 'Rainbow Six'.">
+    <title>Coscu Army | eSports</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="shortcut icon" href="./images/logotitle.png">
     <link rel="stylesheet" href="css/css.css">
 </head>
-<body class="grid-container-contacto">
+<body class="grid-container-esports">
   <header class="header"> 
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -67,25 +70,63 @@
       </nav>
 </header>
 
-    <section class="contacto">
-        <form class="form" action="" method="GET">
-            <h4 class="form-title">Formulario</h4>
-            <input class="form-place" type="text" name="" id="" placeholder="Ingrese su Nombre">
-            <input class="form-place" type="text" name="" id="" placeholder="Ingrese su Apellido">
-            <input class="form-place" type="email" name="" id="" placeholder="Ingrese su Email">
-            <textarea class="form-text-area" name="" id="" placeholder="Ingrese su consulta"></textarea> 
-            <label class="terminos" for="conditions">Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a>
-                <input type="checkbox" name="conditions" id="conditions">
-            </label>
-            <input class="boton" type="submit" value="enviar">
-        </form>
-    </section>
-
-    <footer class="footer top-margin"> 
-        <div class="footer__text">
-            <p>Coscu Army | Derechos Reservados 2020-2021</p>
+<main class="esports">
+    <section class="csgo">
+        <div class="box-img-section">
+            <img class="box-img" src="./images/rainbow.jpg" alt="Logo del Counter Strike">
         </div>
-        <div class="footer__bar"></div>
+        <div>
+            <ul class="flex-players">
+                <li class="players">
+                    <img class="img-players" src="./images/pregunta.jpg" alt="Foto no encontrada">
+                    <div class="info-players">
+                        <h4 class="name-players">Dzr</h4>
+                        <h5 class="role-players">support</h5>
+                        <p class="country-players">Argentino</p>
+                    </div>
+                </li>
+                <li class="players">
+                    <img class="img-players" src="./images/lazing.jpg" alt="Foto de LAZING">
+                    <div class="info-players">
+                        <h4 class="name-players">L4ZING</h4>
+                        <h5 class="role-players">Entry/coach</h5>
+                        <p class="country-players">Argentino</p>
+                    </div>
+                </li>
+                <li class="players">
+                    <img class="img-players" src="./images/rembrandt.jpg" alt="Foto de REMBRANDT">
+                    <div class="info-players">
+                        <h4 class="name-players">rembrandt</h4>
+                        <h5 class="role-players">awper</h5>
+                        <p class="country-players">Argentino</p>
+                    </div>
+                </li>
+                <li class="players">
+                    <img class="img-players" src="./images/wiks.jpg" alt="Foto de WIKS">
+                    <div class="info-players">
+                        <h4 class="name-players">wiks</h4>
+                        <h5 class="role-players">IGL</h5>
+                        <p class="country-players">Chileno</p>
+                    </div>
+                </li>
+                <li class="players">
+                    <img class="img-players" src="./images/pregunta.jpg" alt="Foto no encontrada">
+                    <div class="info-players">
+                        <h4 class="name-players">forbi</h4>
+                        <h5 class="role-players">Entry</h5>
+                        <p class="country-players">Argentino</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer class="footer top-margin"> 
+    <div class="footer__text">
+        <p>Coscu Army | Derechos Reservados 2020-2021</p>
+    </div>
+    <div class="footer__bar"></div>
         <div class="buttons"> 
             <a href="https://www.instagram.com/coscuarmyoficial/"  target="_blank">
                 <img class="buttons__social__media instagram" src="images/instagramLogo.png" alt="instagram logo">
@@ -97,10 +138,11 @@
                 <img class="buttons__social__media youtube" src="images/youtubeLogo.png" alt="youtube logo">
             </a>
             <a href="https://www.facebook.com/CoscuArmyOficial" target="_black">
-            <img class="buttons__social__media facebook" src="images/faceLogo.png" alt="facebook logo">
+                <img class="buttons__social__media facebook" src="images/faceLogo.png" alt="facebook logo">
             </a>
         </div>
-    </footer> 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+</footer> 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
 </html>
