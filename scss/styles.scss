@@ -9,11 +9,6 @@ $redes:(
     youtube: (#fe0000,#fe0000),
     facebook: (#1977f3, #1977f3)
 );
-
-.text-light:hover {
-    background-color: rgb(78, 78, 78);
-}
-
 ul {
     padding-left: initial
 }
@@ -69,7 +64,7 @@ header{
     grid-area: awards;
 }
 
-.contacto{
+.form{
     grid-area: contacto;
 }
 
@@ -139,7 +134,7 @@ footer {
         1fr  ;
     }
 
-    .csgo {
+    .esports__box {
         margin: auto;
     }
     
@@ -147,11 +142,12 @@ footer {
         margin: 10px;
     }
 
-    .box-img-section {   
+    .esports__img__section {   
         width: 100%; 
     }
 
-    .box-img {
+    .esports__img {
+        opacity: 100%;
         margin-top: 10px;
         background-color: white;
         border-radius: 30px;
@@ -159,12 +155,13 @@ footer {
         width: 200px;
     }
 
-    .img-players {
+    .players__img {
+        opacity: 100%;
         width: 150px;
         border-radius: 50%;
     }
 
-    .players {
+    .players__box {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-evenly;
@@ -175,16 +172,16 @@ footer {
         border-radius: 20px;
     }
 
-    .info-players {
+    .players__text {
         text-align: start;
         text-transform: uppercase;
     }
     
-    .role-players {
+    .players__role {
         font-size: 1.2rem;
     }
 
-    .country-players {
+    .players__country {
         font-size: 1.2rem;
         font-weight: 500;
     }
@@ -222,7 +219,7 @@ footer {
         1fr  ;
     }
     
-    .form {
+    .form__box {
         text-align: start;
         width: 80%;
         height: auto;
@@ -232,18 +229,18 @@ footer {
         border-radius: 4px;
     }
 
-    .contacto {
+    .form {
         margin: auto;
     }
     
-    .form-title{
+    .form__title{
         font-family: 'Roboto';
         font-size: 20px;
-        color: white;
+        color: $text-color;
         margin-bottom: 20px;
     }
     
-    .form-place {
+    .form__place {
         border-radius: 4px;
         font-size: 13px;
         border: 1px solid rgb(170, 170, 170);
@@ -255,20 +252,14 @@ footer {
         padding: 10px;
     }
     
-    .form-text-area {
-        border-radius: 4px;
-        font-size: 13px;
-        border: 1px solid rgb(170, 170, 170);
-        background-color: $theme-color;
-        color: $text-color;
-        font-family: 'Roboto';
-        padding: 4px;
+    .form__text__area {
+        @extend .form__place;
+        padding: 6px 10px;
         height: 100px;
-        width: 100%;
         resize: none;
     }
     
-    .terminos {
+    .form__terms {
         margin: 20px 0;
         color: $text-color;
         font-family: 'Roboto';
@@ -278,12 +269,12 @@ footer {
         height: auto;
     }
     
-    .terminos a {
+    .form__terms a {
         color: $text-color;
         text-decoration: underline;
     }
     
-    .terminos a:hover {
+    .form__terms a:hover {
         color: rgb(113, 71, 231);
         text-decoration: underline;
     }
@@ -511,27 +502,28 @@ footer {
             align-items: center;
             margin: 0 auto;
             width: 100%;
+            opacity: 90%;
             height: 100%;
         }
         
-        .csgo {
+        .esports__box {
             background-color: white;
             width: auto;
             margin: 20px;
             border-radius: 5px;
         }
         
-        .flex-players {
+        .players {
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
         }
         
-        .box-img-section {   
+        .esports__img__section {   
             width: 100%; 
         }
         
-        .players {
+        .players__box {
             flex-flow: column nowrap;
             height: 300px;
             width: 200px;
@@ -540,17 +532,17 @@ footer {
             transition: .3s;
         }
 
-        .players:hover {
+        .players__box:hover {
             background-color: $theme-color;
             color: $text-color;
             
         }
         
-        .info-players {
+        .players__text {
             text-align: center;
         }
         
-        .role-players {
+        .players__role {
             margin: 5px 0;
         }
         
@@ -577,7 +569,7 @@ footer {
             1fr  ;
         }
         
-        .contacto {
+        .form {
             margin: auto;
             width: 500px;
         }
@@ -622,29 +614,34 @@ footer {
     }
     /*----------------------------------*/
     /*-----------GRID ESPORTS-----------*/
-    .grid-container-esports {
+    .grid-container-csgo {
         display: grid;  
         grid-template: 
         "header header header header" 95px
         "esports esports esports esports" auto
         "footer footer footer footer" 100px /
         1fr  ;
+        background-image: url(https://steamcdn-a.akamaihd.net/apps/csgo/blog/images/wallpaper_nologo.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .grid-container-rainbow {
+        display: grid;  
+        grid-template: 
+        "header header header header" 95px
+        "esports esports esports esports" auto
+        "footer footer footer footer" 100px /
+        1fr  ;
+        background-image: url(https://www.comunidadxbox.com/wp-content/uploads/Tom-Clancys-Rainbow-Six-Siege-Comunidad-Xbox.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        
     }
 
-    .csgo {
+    .esports__box {
         margin: auto;
     }
     /*----------------------------------*/
-    /*-----------GRID SERVERS-----------*/
-    .grid-container-servers {
-        display: grid;
-        grid-template: 
-        "header header header header" 95px
-        "servers servers servers servers" auto
-        "footer footer footer footer" 100px /
-        1fr  ;
-    }
-    /*---------------------------------*/
     /*-----------GRID AWARDS-----------*/
     .grid-container-awards {
         display: grid;
@@ -654,6 +651,11 @@ footer {
         "footer footer footer footer" 100px /
         1fr 1fr 1fr  ;
     }
+        .awards{
+            margin: auto;
+            width: 80%;
+            height: 100%;
+        }
     /*-----------------------------------*/
     /*-----------GRID CONTACTO-----------*/
     .grid-container-contacto {
@@ -663,6 +665,9 @@ footer {
         "contacto contacto contacto contacto" auto
         "footer footer footer footer" 100px /
         1fr  ;
+        background-image: url(https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/LLLHZUXHCRGXRNHFQ4XBM2ZYJI.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
     /*---------------------------------*/
 

@@ -20,6 +20,7 @@
     <meta name="description" content="Si tienes alguna duda, pregunta o tienes que reportar un problema, no dudes en rellenar el formulario y contarnos tu problema.">
     <title>Coscu Army | Contacto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./images/logotitle.png">
     <link rel="stylesheet" href="css/css.css">
 </head>
@@ -40,7 +41,7 @@
                 <a class="nav-link active" aria-current="page" href="#"></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="index.html">Inicio</a>
+                <a class="nav-link" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="shop.html">Shop</a>
@@ -49,17 +50,17 @@
                 <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Esports
                 </a>
-                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item text-light" href="csgo.html">Counter Strike</a></li>
-                  <li><hr class="dropdown-divider text-light"></li>
-                  <li><a class="dropdown-item text-light" id="a" href="rainbow.html">Rainbow Six</a></li>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="csgo.html">Counter Strike</a></li>
+                  <li><hr class="dropdown-divider" ></li>
+                  <li><a class="dropdown-item" href="rainbow.html">Rainbow Six</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="awards.html">Awards</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
+                <a class="nav-link active" href="contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -67,14 +68,14 @@
       </nav>
 </header>
 
-    <section class="contacto">
-        <form class="form" action="" method="GET">
-            <h4 class="form-title">Formulario</h4>
-            <input class="form-place" type="text" name="" id="" placeholder="Ingrese su Nombre">
-            <input class="form-place" type="text" name="" id="" placeholder="Ingrese su Apellido">
-            <input class="form-place" type="email" name="" id="" placeholder="Ingrese su Email">
-            <textarea class="form-text-area" name="" id="" placeholder="Ingrese su consulta"></textarea> 
-            <label class="terminos" for="conditions">Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a>
+    <section data-aos="zoom-in" class="form">
+        <form class="form__box" action="" method="GET">
+            <h4 class="form__title">Formulario</h4>
+            <input class="form__place" type="text" name="" id="" placeholder="Ingrese su Nombre">
+            <input class="form__place" type="text" name="" id="" placeholder="Ingrese su Apellido">
+            <input class="form__place" type="email" name="" id="" placeholder="Ingrese su Email">
+            <textarea class="form__text__area" name="" id="" placeholder="Ingrese su consulta"></textarea> 
+            <label class="form__terms" for="conditions">Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a>
                 <input type="checkbox" name="conditions" id="conditions">
             </label>
             <input class="boton" type="submit" value="enviar">
@@ -101,6 +102,11 @@
             </a>
         </div>
     </footer> 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
 </html>
