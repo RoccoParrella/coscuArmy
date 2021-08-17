@@ -108,6 +108,8 @@ footer {
     border-radius: 30px;
     padding: 20px;
     width: 200px; }
+  .players__link {
+    text-decoration: none; }
   .players__img {
     opacity: 100%;
     width: 150px;
@@ -120,7 +122,8 @@ footer {
     margin: 20px 0;
     height: 200px;
     background-color: white;
-    border-radius: 20px; }
+    border-radius: 20px;
+    color: #23272b; }
   .players__text {
     text-align: start;
     text-transform: uppercase; }
