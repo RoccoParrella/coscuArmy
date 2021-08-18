@@ -19,6 +19,8 @@ ul {
 }
 
 html{
+    margin: 0;
+    padding: 0;
     height: 100%;
 }
 
@@ -49,15 +51,13 @@ header{
 }
 
 .shop {
+    overflow-x: hidden;
     grid-area: shop;
 }
 
 .esports{
+    overflow-x: hidden;
     grid-area: esports;
-}
-
-.servers{
-    grid-area: servers;
 }
 
 .awards {
@@ -105,6 +105,7 @@ footer {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+        align-items: center;
     }
 
     @for $i from 1 through 3 {
@@ -493,19 +494,28 @@ footer {
         }
         /*----------------------------------*/
         /*-----------GRID ESPORTS-----------*/
-        .grid-container-esports {
+        .grid-container-csgo {
             display: grid;
             grid-template: 
-            "header header header" 95px  
-            "esports esports esports" auto
-            "footer footer footer" 220px /
+            "header" 95px  
+            "esports" auto
+            "footer" 220px /
+            1fr  ;
+        }
+
+        .grid-container-rainbow {
+            display: grid;
+            grid-template: 
+            "header" 95px  
+            "esports" auto
+            "footer" 220px /
             1fr  ;
         }
         
         .esports {
             display: flex;
             align-items: center;
-            margin: 0 auto;
+            margin: auto;
             width: 100%;
             opacity: 90%;
             height: 100%;

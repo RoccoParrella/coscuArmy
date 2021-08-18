@@ -7,6 +7,8 @@ ul {
   box-sizing: border-box; }
 
 html {
+  margin: 0;
+  padding: 0;
   height: 100%; }
 
 body {
@@ -32,13 +34,12 @@ header {
   grid-area: main; }
 
 .shop {
+  overflow-x: hidden;
   grid-area: shop; }
 
 .esports {
+  overflow-x: hidden;
   grid-area: esports; }
-
-.servers {
-  grid-area: servers; }
 
 .awards {
   grid-area: awards; }
@@ -66,7 +67,8 @@ footer {
   .shop {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
   #product1 {
     background-color: white;
     margin: 20px;
@@ -343,13 +345,16 @@ footer {
     transition: 0.5s; }
   /*----------------------------------*/
   /*-----------GRID ESPORTS-----------*/
-  .grid-container-esports {
+  .grid-container-csgo {
     display: grid;
-    grid-template: "header header header" 95px   "esports esports esports" auto "footer footer footer" 220px / 1fr; }
+    grid-template: "header" 95px   "esports" auto "footer" 220px / 1fr; }
+  .grid-container-rainbow {
+    display: grid;
+    grid-template: "header" 95px   "esports" auto "footer" 220px / 1fr; }
   .esports {
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    margin: auto;
     width: 100%;
     opacity: 90%;
     height: 100%; }
